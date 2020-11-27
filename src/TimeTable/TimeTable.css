@@ -1,0 +1,51 @@
+.timeTable {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+}
+.timeTable__imgHeader {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.timeTable__imgHeader > img {
+  width: 100%;
+  object-fit: contain;
+}
+.timeTable__img {
+  overflow: scroll;
+  height: 700px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.timeTable__img > img {
+  width: 100%;
+  object-fit: contain;
+}
+.timeTable__img::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.timeTable__img {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media screen and (max-width: 500px) {
+  .timeTable {
+    padding: 2px;
+  }
+  .timeTable__img {
+    width: 100%;
+  }
+  .timeTable__img > img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .timeTable h1 {
+    font-size: medium;
+  }
+}

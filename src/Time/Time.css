@@ -1,0 +1,47 @@
+.time {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+
+  transition: all 0.1s ease-in-out;
+}
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.timeString {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.dayDate {
+  padding: 40px;
+  color: #f09652;
+}
+.dayString {
+  font-family: "Yatra One", cursive;
+  font-size: 40px;
+  font-weight: 800;
+}
+.dateString {
+  font-size: 20px;
+}
+@media screen and (max-width: 500px) {
+  .time {
+    position: relative;
+    padding: 20px;
+  }
+  .clock {
+    padding: 0px;
+  }
+  .dayDate {
+    padding: 0px;
+  }
+  .timeString {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+}
